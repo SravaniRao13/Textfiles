@@ -1,0 +1,1 @@
+ls C:\Users | select Name, @{Name="Type";Expression={if($_.psIsContainer){"Directory"}else{"File"}}}, @{Name="Size(GB)";Expression={[Math]::Round($(ls $_.FullName -recurse| measure Length -sum).Sum/1GB, 3)}}| sort -property "Size(GB)" -desc | Select -First 20

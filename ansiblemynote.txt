@@ -1,0 +1,52 @@
+Redhat 8 installation ansible
+sudo dnf makecache
+
+
+
+?
+
+
+
+
+sudo dnf install epel-release
+
+
+
+
+?
+
+
+
+
+sudo dnf makecache
+
+
+
+
+?
+
+
+
+ 
+sudo dnf install ansible
+
+
+1. first we need to create a role or play.
+    ansible-galaxy init rolename
+2. in role we automatically get a tree structure such as defaults, files,handlers, meta, Readme.md, tasks,templates,tests,vars.
+    variabilized in either defaults or vars.
+     in tasks we will have main.yml
+     in tests we will have inventory file, test.yml
+     in test.yml we write hosts:windows/localhost(default).
+     in etc we have vi hosts. we give ip address. for total server pinging.
+3.execution in 2 ways.
+  ansible-playbook -i inventory playbookname.yml
+                                or
+  if we already gave hostname like windows or localhost then we use this command
+   ansible-playbook playbookname/tests/test.yml.
+
+
+first tasks
+under task name(attribute)
+under attribute we will have modules, commands.
+

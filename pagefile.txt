@@ -1,0 +1,3 @@
+Pagefile in Windows 10 is a hidden system file with the . SYS extension that is stored on your computer's system drive (usually C:\). The Pagefile allows the computer to perform smoothly by reducing the workload of the physical memory, or RAM
+
+https://www.networkadm.in/query-page-file-size-on-windows-servers-w-powershell/          pagefile
